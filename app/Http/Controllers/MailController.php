@@ -38,7 +38,7 @@ public function sendEmail(Request $request)
 'Prix_Total'=>$total_price
 ];
 
-Mail::to("physconguefack@gmail.com")->send(new SendMail($details));
+Mail::to("takembougguy@gmail.com")->send(new SendMail($details));
 //return redirect()->route('orderplace',[$address],[$phone]);
 return redirect('/orderplace/'.$address.'/'.$phone);
 
